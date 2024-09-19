@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@mixin MyFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// @include MyFlex();
+
+// @font-face {
+//     font-family: "Gilroy-Bold";
+//     src: url("../../../Font/Gilroy-Bold.otf");
+//   }
+
+nav {
+    background: red;
+    display: flex;
+    padding: 20px 150px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+
+    img {
+        width: 180px;
+        height: 90px;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+
+        li {
+            font-size: 20px;
+            cursor: pointer;
+            padding: 8px 9px;
+            border-radius: 10px;
+
+            &:hover {
+                background: orange;
+
+            }
+        }
+    }
+
+    .respNavbar,
+    .menuBox {
+        display: none;
+    }
+}
+
+.open {
+    display: block !important;
+}
+
+@media only screen and (max-width: 924px) {
+    nav {
+        padding: 20px 40px;
+
+        ul {
+            display: none;
+        }
+
+        .menuBox {
+            display: block;
+        }
+
+
+        .menuBox {
+            font-size: 50px;
+            display: flex;
+        }
+
+        .respNavbar {
+            background: orange;
+            position: absolute;
+            top: 130px;
+            right: 0px;
+            width: 50%;
+            height: calc(100vh - (130px));
+        }
+    }
+
+}
+
+@media only screen and (max-width: 533px) {
+    nav {
+        .respNavbar {
+            width: 100%;
+            padding: 20px 30px;
+
+            li {
+                font-size: 28px;
+            }
+        }
+    }
+
+}
