@@ -1,0 +1,67 @@
+@mixin MyFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// @include MyFlex();
+
+@font-face {
+  font-family: "Barlow-Medium";
+  src: url("../../../Font/Barlow-Medium.ttf");
+}
+@font-face {
+  font-family: "Barlow-Regular";
+  src: url("../../../Font/Barlow-Regular.ttf");
+}
+@font-face {
+  font-family: "Barlow-SemiBold";
+  src: url("../../../Font/Barlow-SemiBold.ttf");
+}
+
+footer {
+  border-top: 1px solid gray;
+  background-color: #171717;
+  padding: 50px 90px;
+  color: rgb(219, 217, 217);
+  .upBox {
+    padding: 20px 0px;
+    @include MyFlex();
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      font-size: 20px;
+      li {
+        font-family: "Barlow-Regular";
+        cursor: pointer;
+      }
+    }
+  }
+  .downBox {
+    padding: 50px 0px 0px 0px;
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Barlow-Regular";
+
+    .normalBox {
+      display: flex;
+      gap: 20px;
+      .iconBox {
+        @include MyFlex();
+        gap: 10px;
+        border-bottom: 1px solid gray;
+        padding: 10px 0px;
+        .icon {
+          @include MyFlex();
+          font-size: 20px;
+          color: #a5e63e
+        }
+      }
+    }
+    p {
+      @include MyFlex();
+    }
+  }
+}

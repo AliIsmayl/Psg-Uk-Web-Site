@@ -1,0 +1,136 @@
+@mixin MyFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// @include MyFlex();
+
+@font-face {
+  font-family: "Barlow-Medium";
+  src: url("../../../Font/Barlow-Medium.ttf");
+}
+@font-face {
+  font-family: "Barlow-Regular";
+  src: url("../../../Font/Barlow-Regular.ttf");
+}
+@font-face {
+  font-family: "Barlow-SemiBold";
+  src: url("../../../Font/Barlow-SemiBold.ttf");
+}
+
+#service {
+  padding: 20px 20px 100px 20px;
+  @include MyFlex();
+  flex-direction: column;
+  background: #171717;
+  .upBox {
+    text-align: center;
+    width: 90%;
+    height: 40vh;
+    @include MyFlex();
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    h2 {
+      font-family: "Barlow-Medium";
+      font-size: 40px;
+    }
+    p {
+      font-family: "Barlow-Regular";
+      font-size: 20px;
+    }
+  }
+  .downBox {
+    margin-top: 50px;
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    @include MyFlex();
+    justify-content: space-between;
+    gap: 10px 0px;
+    .card {
+      padding: 20px 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 440px;
+      border: 1px solid gray;
+      height: 600px;
+      color: white;
+
+      //   &:nth-child(1) {
+      //     border-left: 1px solid orange;
+      //   }
+      .iconBox {
+        background: yellow;
+        width: 75px;
+        height: 78px;
+        @include MyFlex();
+        border-radius: 10px;
+        background: linear-gradient(180deg, #2323239e 83%, #171717 100%);
+
+        img {
+          max-width: 25px;
+        }
+      }
+      p {
+        font-size: 27px;
+        // max-width: 10px;
+        font-family: "Barlow-Medium";
+        line-height: 1.5;
+      }
+      span {
+        font-size: 18px;
+        color: #999999;
+        font-family: "Barlow-SemiBold";
+        max-width: 90%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1039px) {
+  #service {
+    .downBox {
+      justify-content: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 739px) {
+  #service {
+    padding: 50px 0px;
+    .upBox {
+      width: 95%;
+    }
+  }
+}
+
+@media only screen and (max-width: 495px) {
+  #service {
+    .downBox {
+      .card {
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 440px;
+        border: 1px solid gray;
+        height: 600px;
+        color: white;
+        height: fit-content;
+        .iconBox {
+          width: 55px;
+          height: 60px;
+        }
+        p {
+          font-size: 20px;
+        }
+        span {
+          font-size: 17px;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
