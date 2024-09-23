@@ -5,7 +5,8 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 import ReCAPTCHA from "react-google-recaptcha";
-
+import Logo from '../../../Image/Logo.png'
+import Image from '../../../Image/About.png'
 function Contact() {
   const [isMessageSent, setIsMessageSent] = useState(false);
   const [capVal, setCapVal] = useState(null);
@@ -83,68 +84,25 @@ function Contact() {
   };
   return (
     <section id="contact" className="contact">
-      <h1 className="heading">get in touch</h1>
-      <div className="contact-in">
-        <Formik
-          initialValues={initialValues}
-          validationSchema={validationSchema}
-          validateOnChange={true}
-          validateOnBlur={true}
-          onSubmit={handleSubmit}
-        >
-          {({ isSubmitting, handleSubmit }) => (
-            <Form>
-              <ReCAPTCHA
-                ref={recaptchaRef} // Attach the ref to ReCAPTCHA
-                className="recaptch"
-                sitekey="6LdIJkoqAAAAAJEO4zc9M1Uj5eA5eNYMoQQ9HtVl"
-                onChange={(val) => setCapVal(val)}
-              />
-                  <div className="box">
-                    <Field type="text" name="name" placeholder="Your Name" />
-                    <ErrorMessage
-                      name="name"
-                      component="div"
-                      className="error"
-                    />
-                  </div>
+      <div className="littleBox" style={{ backgroundImage: `url(${Image})` }}>
+        <div className="leftBox">
+          <h2 className="heading">Your Vision, Our Mission: Let's Shape Success Together.</h2>
 
-                  <div className="box">
-                    <Field type="email" name="email" placeholder="Your Email" />
-                    <ErrorMessage
-                      name="email"
-                      component="div"
-                      className="error"
-                    />
-                  </div>
-
-                <div className="box">
-                  <Field
-                    className={"textarea"}
-                    type="text"
-                    name="message"
-                    placeholder="Your Message"
-                  />
-                  <ErrorMessage
-                    name="message"
-                    component="div"
-                    className="error"
-                  />
-                </div>
-                <div className="box">
-                  <Field
-                    className={"textarea"}
-                    type="text"
-                    name="companyName"
-                    placeholder="Your Company Name"
-                  />
-                  <ErrorMessage
-                    name="companyName"
-                    component="div"
-                    className="error"
-                  />
-                </div>
-
+          <Formik
+            initialValues={initialValues}
+            validationSchema={validationSchema}
+            validateOnChange={true}
+            validateOnBlur={true}
+            onSubmit={handleSubmit}
+          >
+            {({ isSubmitting, handleSubmit }) => (
+              <Form>
+                <ReCAPTCHA
+                  ref={recaptchaRef} // Attach the ref to ReCAPTCHA
+                  className="recaptch"
+                  sitekey="6LdIJkoqAAAAAJEO4zc9M1Uj5eA5eNYMoQQ9HtVl"
+                  onChange={(val) => setCapVal(val)}
+                />
                 <button
                   type="button"
                   onClick={() =>
@@ -154,12 +112,65 @@ function Contact() {
                   {isLoading ? (
                     <img src="https://i.gifer.com/ZKZg.gif" alt="Loading..." />
                   ) : (
-                    "Send Message"
+                    "Submit"
                   )}
                 </button>
-            </Form>
-          )}
-        </Formik>
+                <div className="box">
+                  <Field
+                    className={"textarea"}
+                    type="text"
+                    name="companyName"
+                    placeholder="Describe Your Requirement"
+                  />
+                  <ErrorMessage
+                    name="companyName"
+                    component="div"
+                    className="error"
+                  />
+                </div>
+
+                <div className="box">
+                  <Field type="email" name="email" placeholder="Email Address" />
+                  <ErrorMessage
+                    name="email"
+                    component="div"
+                    className="error"
+                  />
+                </div>
+                <div className="box">
+                  <Field
+                    type="text"
+                    name="message"
+                    placeholder="Company Name"
+                  />
+                  <ErrorMessage
+                    name="message"
+                    component="div"
+                    className="error"
+                  />
+                </div>
+                <div className="box">
+                  <Field type="text" name="name" placeholder="Name" />
+                  <ErrorMessage
+                    name="name"
+                    component="div"
+                    className="error"
+                  />
+                </div>
+
+
+
+
+
+              </Form>
+            )}
+          </Formik>
+        </div>
+        <div className="rightBox">
+          <img src={Logo} alt="" />
+          <h2>Thank you for your Interest in PSG UK</h2>
+          <p>We would love to hear from you and discuss how we can help bring your digital ideas to life. Here are the different ways you can get in touch with us.</p>
+        </div>
       </div>
     </section>
   );

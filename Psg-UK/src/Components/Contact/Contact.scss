@@ -1,0 +1,174 @@
+@mixin MyFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// @include MyFlex();
+
+@font-face {
+    font-family: "Barlow-Medium";
+    src: url("../../../Font/Barlow-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Barlow-Regular";
+    src: url("../../../Font/Barlow-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Barlow-SemiBold";
+    src: url("../../../Font/Barlow-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "NeutralFace-Bold";
+    src: url("../../../Font/NeutralFace-Bold.otf");
+}
+
+@font-face {
+    font-family: "NeutralFace";
+    src: url("../../../Font/NeutralFace.otf");
+}
+
+#contact {
+    padding: 30px 100px;
+    background: #171717;
+
+    .littleBox {
+        display: flex;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 50px;
+
+        .leftBox {
+            width: 50%;
+            padding: 50px 10px;
+
+            h2 {
+                font-family: "Barlow-Regular";
+                max-width: 480px;
+                font-size: 30px;
+                margin-bottom: 50px;
+                color: white;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column-reverse;
+                gap: 10px;
+
+                input {
+                    padding: 0px 10px;
+                    width: 450px;
+                    height: 50px;
+                    font-family: "Barlow-Regular";
+                    font-size: 17px;
+                    outline-color: #9fee00;
+                }
+
+                .error {
+                    padding: 10px 10px 0px 10px;
+                    font-family: "Barlow-Regular";
+                    color: red;
+                }
+
+                .textarea {
+                    padding: 25px 20px 100px 10px !important;
+                }
+
+                button {
+                    margin: 10px 0px;
+                    width: 130px;
+                    height: 50px;
+                    font-family: "Barlow-Regular";
+                    border-radius: 10px;
+                    border: 1px solid transparent;
+                    cursor: pointer;
+                    background: #9fee00;
+                    @include MyFlex();
+                    img{
+                        max-width: 25px;
+                    }
+                }
+            }
+        }
+
+        .rightBox {
+            width: 50%;
+            @include MyFlex();
+            flex-direction: column;
+            padding: 50px 10px;
+            color: white;
+
+            img {
+                max-width: 150px;
+            }
+
+            h2 {
+                font-size: 40px;
+                font-family: "Barlow-Medium";
+                margin-top: 40px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 18px;
+                text-align: center;
+                margin-top: 10px;
+                font-family: "Barlow-Regular";
+                color: #767676;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1059px) {
+    #contact {
+
+        .littleBox {
+            flex-direction: column;
+            gap: 50px;
+            padding: 0px;
+
+            .leftBox {
+                width: 100%;
+
+                form {
+                    input {
+                        width: 85%;
+                    }
+                }
+            }
+
+            .rightBox {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 492px) {
+    #contact {
+        padding: 30px 0px;
+
+        .littleBox {
+            @include MyFlex();
+
+            .leftBox {
+                padding: 50px 10px;
+
+                form {
+                    input {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .rightBox {
+                width: 100%;
+            }
+        }
+    }
+}
