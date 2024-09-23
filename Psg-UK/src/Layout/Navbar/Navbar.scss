@@ -10,39 +10,30 @@
   align-items: center;
 }
 
-// @include MyFlex();
-
 @font-face {
   font-family: "Barlow-Medium";
   src: url("../../../Font/Barlow-Medium.ttf");
 }
+
 @font-face {
   font-family: "Barlow-Regular";
   src: url("../../../Font/Barlow-Regular.ttf");
 }
+
 @font-face {
   font-family: "Barlow-SemiBold";
   src: url("../../../Font/Barlow-SemiBold.ttf");
 }
-@font-face {
-  font-family: "NeutralFace-Bold";
-  src: url("../../../Font/NeutralFace-Bold.otf");
-}
-@font-face {
-  font-family: "NeutralFace";
-  src: url("../../../Font/NeutralFace.otf");
-}
 
 nav {
-  // background: red;
   display: flex;
   padding: 20px 90px;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   width: 100%;
-  color: white;
   z-index: 2;
+
   img {
     width: 170px;
     height: 80px;
@@ -61,6 +52,7 @@ nav {
       border-radius: 10px;
       color: white;
       @include MyFlex();
+
       &:hover {
         background: rgba(255, 239, 239, 0.207);
       }
@@ -70,7 +62,16 @@ nav {
   .respNavbar,
   .menuBox {
     display: none;
+    color: white;
   }
+}
+
+.redBg {
+  background-color: rgba(49, 49, 49, 0.181);
+}
+
+.greenBg {
+  background-color: #171717;
 }
 
 .open {
@@ -95,22 +96,25 @@ nav {
     }
 
     .respNavbar {
-      background: orange;
+      background: #171717;
       position: absolute;
-      top: 120px;
+      top: 100px;
       right: 0px;
       width: 50%;
-      height: calc(100vh - (120px));
+      height: calc(100vh - 100px);
+      font-family: "Barlow-Medium";
+
     }
   }
 }
 
 @media only screen and (max-width: 533px) {
   nav {
-    img{
+    img {
       width: 120px;
       height: 60px;
     }
+
     .respNavbar {
       width: 100%;
       padding: 20px 30px;

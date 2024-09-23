@@ -7,10 +7,18 @@ import Contact from '../Components/Contact/Contact'
 function HomePage() {
   return (
     <>
-      <Header/>
-      <AboutUs/>
-      <Service/>
-      <Contact/>
+      <div id="Home">
+        <Header />
+      </div>
+      <div id="About">
+        <AboutUs />
+      </div>
+      <div id="Service">
+        <Service />
+      </div>
+      <div id="Contact">
+        <Contact />
+      </div>
     </>
   )
 }
