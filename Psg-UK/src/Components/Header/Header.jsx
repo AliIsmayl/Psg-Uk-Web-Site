@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.scss";
-import Image from "../../../Image/Header.jpg";
+import Image from "../../../Image/Header.webp";
 
 function Header() {
   return (
