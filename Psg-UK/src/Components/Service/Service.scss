@@ -10,10 +10,12 @@
   font-family: "Barlow-Medium";
   src: url("../../../Font/Barlow-Medium.ttf");
 }
+
 @font-face {
   font-family: "Barlow-Regular";
   src: url("../../../Font/Barlow-Regular.ttf");
 }
+
 @font-face {
   font-family: "Barlow-SemiBold";
   src: url("../../../Font/Barlow-SemiBold.ttf");
@@ -24,6 +26,7 @@
   @include MyFlex();
   flex-direction: column;
   background: #171717;
+
   .upBox {
     text-align: center;
     width: 90%;
@@ -32,15 +35,18 @@
     flex-direction: column;
     gap: 10px;
     color: white;
+
     h2 {
       font-family: "Barlow-Medium";
       font-size: 40px;
     }
+
     p {
       font-family: "Barlow-Regular";
       font-size: 20px;
     }
   }
+
   .downBox {
     margin-top: 50px;
     display: flex;
@@ -49,13 +55,14 @@
     @include MyFlex();
     justify-content: space-between;
     gap: 10px 0px;
+
     .card {
       padding: 20px 30px;
       display: flex;
       flex-direction: column;
       gap: 20px;
       width: 440px;
-      border: 1px solid gray;
+      border: 1px solid rgba(128, 128, 128, 0.442);
       height: 600px;
       color: white;
 
@@ -69,17 +76,23 @@
         @include MyFlex();
         border-radius: 10px;
         background: linear-gradient(180deg, #2323239e 83%, #171717 100%);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 
         img {
           max-width: 25px;
         }
       }
+
       p {
         font-size: 27px;
         // max-width: 10px;
         font-family: "Barlow-Medium";
         line-height: 1.5;
+        max-width: 90%;
       }
+
       span {
         font-size: 18px;
         color: #999999;
@@ -89,6 +102,7 @@
     }
   }
 }
+
 @media only screen and (max-width: 1039px) {
   #service {
     .downBox {
@@ -100,6 +114,7 @@
 @media only screen and (max-width: 739px) {
   #service {
     padding: 50px 0px;
+
     .upBox {
       width: 95%;
     }
@@ -119,13 +134,16 @@
         height: 600px;
         color: white;
         height: fit-content;
+
         .iconBox {
           width: 55px;
           height: 60px;
         }
+
         p {
           font-size: 20px;
         }
+
         span {
           font-size: 17px;
           max-width: 100%;
