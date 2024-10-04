@@ -10,7 +10,6 @@ function App() {
   return (
     <>
       <Toaster />
-
       <Navbar />
       <HomePage />
       <Footer />

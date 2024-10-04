@@ -26,7 +26,7 @@ function Footer() {
             <div className="icon">
               <FaPhone />
             </div>
-            <p>1616165165165165</p>
+            <p>+44 7799 360448</p>
           </div>
         </div>
         <p>Copyright © 2024 PSG-UK. All Rights Reserved.</p>
