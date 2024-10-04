@@ -10,6 +10,7 @@ import Icon6 from "../../../Image/Icon6.png";
 import Icon7 from "../../../Image/Icon7.png";
 import Icon8 from "../../../Image/Icon8.png";
 import Icon9 from "../../../Image/Icon9.png";
+import IconBack from "../../../Image/IconBack.png";
 
 function Service() {
   return (
@@ -23,7 +24,7 @@ function Service() {
       </div>
       <div className="downBox">
         <div className="card">
-          <div className="iconBox">
+          <div className="iconBox" style={{ backgroundImage: `url(${IconBack})` }}>
             <img src={Icon4} alt="" />
           </div>
           <p>
@@ -42,104 +43,7 @@ function Service() {
           </span>
         </div>
         <div className="card">
-          <div className="iconBox">
-            <img src={Icon9} alt="" />
-          </div>
-          <p style={{maxWidth:"200px"}}>Web Page Development</p>
-          <span>
-            We deliver exceptional web development services that create
-            responsive and visually engaging websites, elevating your brand's
-            online presence. Our solutions prioritize seamless functionality
-            across all devices, integrating intuitive design with optimized
-            performance and strong security. From simple landing pages to
-            complex web applications, we provide scalable solutions tailored to
-            your business goals. Partner with us to transform your digital
-            experience and drive engagement.
-          </span>
-        </div>
-        <div className="card">
-          <div className="iconBox">
-            <img src={Icon7} alt="" />
-          </div>
-          <p style={{maxWidth:"200px"}}>Software Development</p>
-          <span>
-            We specialize in delivering customized software development
-            solutions that enhance operational efficiency. Our experienced team
-            creates high-performance, scalable applications that prioritize both
-            security and user experience. From enterprise software to mobile
-            apps and cloud-based solutions, we focus on optimizing your software
-            for reliability and future growth. Collaborate with us to harness
-            innovative technology that drives your business forward.
-          </span>
-        </div>
-        <div className="card">
-          <div className="iconBox">
-            <img src={Icon2} alt="" />
-          </div>
-          <p>Implementation and Technical Support of SAP Systems</p>
-          <span>
-            We offer complete solutions for the implementation and support of
-            SAP systems, ensuring they integrate smoothly with your existing
-            business processes. Our specialists oversee every phase of SAP
-            deployment, including setup, configuration, and personalized
-            enhancements for optimal performance. Following the implementation,
-            we deliver continuous technical support to maintain system
-            efficiency, manage upgrades, and resolve any issues. Rely on us to
-            unlock the full potential of your SAP solutions and enhance your
-            organizational effectiveness.
-          </span>
-        </div>
-        <div className="card">
-          <div className="iconBox">
-            <img src={Icon3} alt="" />
-          </div>
-          <p>SAP BRP Systems Technical and End-User Training</p>
-          <span>
-            We provide extensive training programs for SAP BRP systems, tailored
-            for both technical teams and end-users. Our customized curriculum
-            encompasses system functionality, technical configurations, and
-            industry best practices, empowering users and IT staff to
-            effectively manage SAP BRP solutions. Through interactive workshops
-            and detailed tutorials, we equip your team with the knowledge and
-            skills necessary to maximize the performance and productivity of SAP
-            systems. Invest in your team's expertise to ensure successful
-            implementation and utilization of SAP technologies.
-          </span>
-        </div>
-        <div className="card">
-          <div className="iconBox">
-            <img src={Icon5} alt="" />
-          </div>
-          <p style={{maxWidth:"200px"}}>Project Management</p>
-          <span>
-            Effective project management is the backbone of successful web
-            design. Our approach involves setting clear objectives, strategic
-            planning, and ensuring timely execution while continuously tracking
-            progress. By carefully overseeing each phase and adapting to any
-            changes, we ensure that projects stay on course and align with
-            client expectations. This structured yet flexible methodology
-            guarantees a seamless experience from concept to completion,
-            delivering high-quality, user-centric websites.
-          </span>
-        </div>
-        <div className="card">
-          <div className="iconBox">
-            <img src={Icon1} alt="" />
-          </div>
-          <p style={{maxWidth:"150px"}}>Quality Control</p>
-          <span>
-            Effective project management is the backbone of successful web
-            design. Our approach involves setting clear objectives, strategic
-            planning, and ensuring timely execution while continuously tracking
-            progress. By carefully overseeing each phase and adapting to any
-            changes, we ensure that projects stay on course and align with
-            client expectations. This structured yet flexible methodology
-            guarantees a seamless experience from concept to completion,
-            delivering high-quality, user-centric websites.
-          </span>
-        </div>
-        <div className="card">
-          <div className="iconBox">
+          <div className="iconBox" style={{ backgroundImage: `url(${IconBack})` }}>
             <img src={Icon6} alt="" />
           </div>
           <p>Methodology Writing and Preparation of Technical Requirements</p>
@@ -156,10 +60,107 @@ function Service() {
           </span>
         </div>
         <div className="card">
-          <div className="iconBox">
+          <div className="iconBox" style={{ backgroundImage: `url(${IconBack})` }}>
+            <img src={Icon2} alt="" />
+          </div>
+          <p>Implementation and Technical Support of SAP Systems</p>
+          <span>
+            We offer complete solutions for the implementation and support of
+            SAP systems, ensuring they integrate smoothly with your existing
+            business processes. Our specialists oversee every phase of SAP
+            deployment, including setup, configuration, and personalized
+            enhancements for optimal performance. Following the implementation,
+            we deliver continuous technical support to maintain system
+            efficiency, manage upgrades, and resolve any issues. Rely on us to
+            unlock the full potential of your SAP solutions and enhance your
+            organizational effectiveness.
+          </span>
+        </div>
+        <div className="card">
+          <div className="iconBox" style={{ backgroundImage: `url(${IconBack})` }}>
+            <img src={Icon7} alt="" />
+          </div>
+          <p style={{ maxWidth: "200px" }}>Software Development</p>
+          <span>
+            We specialize in delivering customized software development
+            solutions that enhance operational efficiency. Our experienced team
+            creates high-performance, scalable applications that prioritize both
+            security and user experience. From enterprise software to mobile
+            apps and cloud-based solutions, we focus on optimizing your software
+            for reliability and future growth. Collaborate with us to harness
+            innovative technology that drives your business forward.
+          </span>
+        </div>
+        <div className="card">
+          <div className="iconBox" style={{ backgroundImage: `url(${IconBack})` }}>
+            <img src={Icon3} alt="" />
+          </div>
+          <p>SAP BRP Systems Technical and End-User Training</p>
+          <span>
+            We provide extensive training programs for SAP BRP systems, tailored
+            for both technical teams and end-users. Our customized curriculum
+            encompasses system functionality, technical configurations, and
+            industry best practices, empowering users and IT staff to
+            effectively manage SAP BRP solutions. Through interactive workshops
+            and detailed tutorials, we equip your team with the knowledge and
+            skills necessary to maximize the performance and productivity of SAP
+            systems. Invest in your team's expertise to ensure successful
+            implementation and utilization of SAP technologies.
+          </span>
+        </div>
+        <div className="card">
+          <div className="iconBox" style={{ backgroundImage: `url(${IconBack})` }}>
+            <img src={Icon5} alt="" />
+          </div>
+          <p style={{ maxWidth: "200px" }}>Project Management</p>
+          <span>
+            Effective project management is the backbone of successful web
+            design. Our approach involves setting clear objectives, strategic
+            planning, and ensuring timely execution while continuously tracking
+            progress. By carefully overseeing each phase and adapting to any
+            changes, we ensure that projects stay on course and align with
+            client expectations. This structured yet flexible methodology
+            guarantees a seamless experience from concept to completion,
+            delivering high-quality, user-centric websites.
+          </span>
+        </div>
+        <div className="card">
+          <div className="iconBox" style={{ backgroundImage: `url(${IconBack})` }}>
+            <img src={Icon1} alt="" />
+          </div>
+          <p style={{ maxWidth: "150px" }}>Quality Control</p>
+          <span>
+            Effective project management is the backbone of successful web
+            design. Our approach involves setting clear objectives, strategic
+            planning, and ensuring timely execution while continuously tracking
+            progress. By carefully overseeing each phase and adapting to any
+            changes, we ensure that projects stay on course and align with
+            client expectations. This structured yet flexible methodology
+            guarantees a seamless experience from concept to completion,
+            delivering high-quality, user-centric websites.
+          </span>
+        </div>
+        <div className="card">
+          <div className="iconBox" style={{ backgroundImage: `url(${IconBack})` }}>
+            <img src={Icon9} alt="" />
+          </div>
+          <p style={{ maxWidth: "200px" }}>Web Page Development</p>
+          <span>
+            We deliver exceptional web development services that create
+            responsive and visually engaging websites, elevating your brand's
+            online presence. Our solutions prioritize seamless functionality
+            across all devices, integrating intuitive design with optimized
+            performance and strong security. From simple landing pages to
+            complex web applications, we provide scalable solutions tailored to
+            your business goals. Partner with us to transform your digital
+            experience and drive engagement.
+          </span>
+        </div>
+        <div className="card">
+          <div className="iconBox" style={{ backgroundImage: `url(${IconBack})` }}>
             <img src={Icon8} alt="" />
           </div>
-          <p style={{maxWidth:"200px"}}>SmartTrack Solutions</p>
+          <p style={{ maxWidth: "200px" }}>SmartTrack Solutions</p>
           <span>
             SmartTrack Solutions is a unified platform that combines Vehicle
             License Plate Recognition with advanced Barcode and POS technology.

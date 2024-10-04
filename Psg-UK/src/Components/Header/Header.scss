@@ -10,22 +10,27 @@
   font-family: "Barlow-Medium";
   src: url("../../../Font/Barlow-Medium.ttf");
 }
+
 @font-face {
   font-family: "Barlow-Regular";
   src: url("../../../Font/Barlow-Regular.ttf");
 }
+
 @font-face {
   font-family: "Barlow-SemiBold";
   src: url("../../../Font/Barlow-SemiBold.ttf");
 }
+
 @font-face {
   font-family: "NeutralFace-Bold";
   src: url("../../../Font/NeutralFace-Bold.otf");
 }
+
 @font-face {
   font-family: "NeutralFace";
   src: url("../../../Font/NeutralFace.otf");
 }
+
 header {
   position: relative;
 
@@ -34,6 +39,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
   .backFont {
     position: absolute;
     top: 0;
@@ -41,19 +47,21 @@ header {
     width: 100%;
     height: 100%;
     @include MyFlex();
-    background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(24, 28, 47, 0.711) 83%, #171717 100%);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, rgba(4, 5, 9, 0.399) 83%, #1717176b 100%);
+
     h1 {
       font-size: 50px;
       max-width: 700px;
       text-align: center;
-      font-family: "NeutralFace-Bold";
+      font-family: "NeutralFace";
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-image: linear-gradient(45deg, #ffffff, #52557dc8);
     }
   }
 }
+
 @media only screen and (max-width: 533px) {
   header {
     .backFont {

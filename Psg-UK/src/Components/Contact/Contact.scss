@@ -49,7 +49,7 @@
             h2 {
                 font-family: "Barlow-Regular";
                 max-width: 480px;
-                font-size: 30px;
+                font-size: 25px;
                 margin-bottom: 50px;
                 color: white;
             }
@@ -66,6 +66,12 @@
                     font-family: "Barlow-Regular";
                     font-size: 17px;
                     outline-color: #9fee00;
+                    background-color: #ffffff1c;
+                    border: none;
+                    color: white;
+                    &::placeholder{
+                        color: white;
+                    }
                 }
 
                 .error {
@@ -99,26 +105,25 @@
             width: 50%;
             @include MyFlex();
             flex-direction: column;
-            padding: 50px 10px;
+            // padding: 50px 10px;
             color: white;
-
             img {
                 max-width: 150px;
             }
 
             h2 {
-                font-size: 40px;
+                font-size: 30px;
                 font-family: "Barlow-Medium";
                 margin-top: 40px;
                 text-align: center;
             }
 
             p {
-                font-size: 18px;
+                font-size: 19px;
                 text-align: center;
                 margin-top: 10px;
                 font-family: "Barlow-Regular";
-                color: #767676;
+                color: #b6b6b6;
             }
         }
     }
