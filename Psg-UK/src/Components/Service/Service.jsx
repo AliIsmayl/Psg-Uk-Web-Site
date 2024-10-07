@@ -114,14 +114,7 @@ function Service() {
           </div>
           <p style={{ maxWidth: "200px" }}>Project Management</p>
           <span>
-            Effective project management is the backbone of successful web
-            design. Our approach involves setting clear objectives, strategic
-            planning, and ensuring timely execution while continuously tracking
-            progress. By carefully overseeing each phase and adapting to any
-            changes, we ensure that projects stay on course and align with
-            client expectations. This structured yet flexible methodology
-            guarantees a seamless experience from concept to completion,
-            delivering high-quality, user-centric websites.
+            Effective project management is essential for the success of web design projects. Our approach involves setting clear objectives, creating strategic plans, and ensuring timely execution. By closely tracking progress and adapting to changes, we align our projects with client expectations. This structured yet flexible methodology guarantees a seamless experience from concept to completion, delivering user-centric websites
           </span>
         </div>
         <div className="card">
@@ -130,14 +123,7 @@ function Service() {
           </div>
           <p style={{ maxWidth: "150px" }}>Quality Control</p>
           <span>
-            Effective project management is the backbone of successful web
-            design. Our approach involves setting clear objectives, strategic
-            planning, and ensuring timely execution while continuously tracking
-            progress. By carefully overseeing each phase and adapting to any
-            changes, we ensure that projects stay on course and align with
-            client expectations. This structured yet flexible methodology
-            guarantees a seamless experience from concept to completion,
-            delivering high-quality, user-centric websites.
+            Quality control is a critical part of our web design process, ensuring that the end product meets the highest standards. Our rigorous QA process involves thorough testing, meticulous reviews, and continuous improvements. By identifying and addressing issues early, we maintain the integrity of the design, ensuring a reliable and high-quality final product that exceeds client expectations.
           </span>
         </div>
         <div className="card">
